@@ -1,7 +1,6 @@
-# Oversampling with SMOTE with its relative algorithms
+# TRIM-SBR: TRIM-Smoothed Bootstrap Resampling
 
-[![View TRIM-SBR: TRIM-Smoothed Bootstrap Resampling]
-[(https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://jp.mathworks.com/matlabcentral/fileexchange/75168-oversampling-imbalanced-data-smote-related-algorithms)
+[![Build Status](https://api.travis-ci.com/python/mypy.svg?branch=master)](https://travis-ci.com/python/mypy)
 
    -  SMOTE (Chawla, NV. et al. 2002)[1]  
    -  Borderline SMOTE (Han, H. et al. 2005)[2]  
@@ -10,7 +9,26 @@
 
 TRIM-Smoothed Bootstrap Resampling (TRIM-SBR) is a proposed method to reduce the overgeneralization problem that usually occurs when synthetic data is formed into a majority class region with evenly distributed synthetic data effects. Our method is based on pruning by looking for a particular minority area while maintaining the generality of the data so that it will find the minority data set while filtering out irrelevant data. The pruning results will produce a minority data seed that is used as a benchmark in duplicating data. To ensure the duplication of data is evenly distributed, the bootstrap resampling technique is used to create new data
 
-# Check the number of data for each class
+## Installation
+
+This assumes a standard Ubuntu 18.04 (or 16.04) machine.
+
+* Clone the repo:
+```
+git clone --recursive https://github.com/MarcToussaint/rai-python.git
+cd rai-python
+```
+.. or call them individually: `cd rai/test/LGP/pickAndPlace; make; ./x.exe`
+
+## Documentation
+
+The install was tested in the
+[mini20 docker](https://github.com/MarcToussaint/rai-maintenance/tree/master/docker/mini20). There
+is also a
+[full20](https://github.com/MarcToussaint/rai-maintenance/tree/master/docker/full20)
+docker that contains a compiled rai version.
+
+# Example Usage
 ```matlab
 label0 = repmat("class0",length(data),1);
 label1 = repmat("class1",length(data1),1);
@@ -37,8 +55,12 @@ labelCounts = cell2mat(t(:,2));
 
 ![figure_2.png](README_images/figure_2.png)
 
-# Reference and its graphical explanation
+# Example Usage
 
+
+# Citation
+
+# Reference
 
 [1]: Chawla, N. V., Bowyer, K. W., Hall, L. O., \& Kegelmeyer, W. P. (2002). SMOTE: synthetic minority over-sampling technique. Journal of artificial intelligence research, 16, 321-357. 
 
@@ -50,10 +72,3 @@ labelCounts = cell2mat(t(:,2));
 
 
 [4]: Bunkhumpornpat, C., Sinapiromsaran, K., \& Lursinsap, C. (2009). Safe-level-smote: Safe-level-synthetic minority over-sampling technique for handling the class imbalanced problem. In Pacific-Asia conference on knowledge discovery and data mining (pp. 475-482). Springer, Berlin, Heidelberg.
-
-
-## SMOTE (Chawla, NV. et al. 2002)
-
-
-![image_0.png](README_images/image_0.png)
-
