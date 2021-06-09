@@ -2,16 +2,16 @@
 
 [![Build Status](https://api.travis-ci.com/python/mypy.svg?branch=master)](https://travis-ci.com/python/mypy)
 
-TRIM-Smoothed Bootstrap Resampling (TRIM-SBR) is a proposed method to reduce the overgeneralization problem that usually occurs when synthetic data is formed into a majority class region with evenly distributed synthetic data effects. Our method is based on pruning by looking for a particular minority area while maintaining the generality of the data so that it will find the minority data set while filtering out irrelevant data. The pruning results will produce a minority data seed that is used as a benchmark in duplicating data. To ensure the duplication of data is evenly distributed, the bootstrap resampling technique is used to create new data
+TRIM-Smoothed Bootstrap Resampling (TRIM-SBR) is a proposed method to reduce the overgeneralization problem that usually occurs when synthetic data is formed into a majority class region with evenly distributed synthetic data effects. Our method is based on pruning by looking for a particular minority area while maintaining the generality of the data so that it will find the minority data set while filtering out irrelevant data. The pruning results will produce a minority data seed that is used as a benchmark in duplicating data. To ensure the duplication of data is evenly distributed, the bootstrap resampling technique is used to create new data.
 
-## Installation
+# Installation
 
-The implementation is tested under python 3.7 
+The implementation is tested under python 3.7
 
 * numpy (numpy>=1.13, <1.17)
 * scikit-learn (>=0.19.0, <0.23)
 
-* Clone the repo:
+## Clone the repo:
 
 Clone this repository and run the TRIM-SBR.py file. Use the following commands to get a copy from GitHub and install all dependencies:
 
@@ -19,18 +19,18 @@ Clone this repository and run the TRIM-SBR.py file. Use the following commands t
 git clone https://github.com/praswibowo/TRIM-SBR.git
 ```
 
-## Documentation
+# Documentation
 
 This project follows the [imbalanced-learn](https://imbalanced-learn.org/) and [smote-variants](https://smote-variants.readthedocs.io/), the both of the documentation might also prove helpful.
 
-# Example Usage
+## Example Usage
 ```
 TRIM_sbr = MulticlassOversampling(TRIM_SBR(random_state=42))
 TRIM_sbr_X_train, TRIM_sbr_y_train = TRIM_sbr.sample(X_train, y_train)
 
 np.bincount(TRIM_sbr_y_train)
 ```
-Expected Output:
+### Expected Output:
 
 ```
 ##TRIM SBR
@@ -41,10 +41,10 @@ Expected Output:
 
 array([415, 415], dtype=int64)
 ```
-Before Oversampling:
+### Before Oversampling:
 ![figure_1.png](images/figure_1.png)
 
-After Oversampling:
+### After Oversampling:
 ![figure_2.png](images/figure_2.png)
 
 # Citation
