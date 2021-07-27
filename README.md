@@ -54,13 +54,13 @@ If you use k-means SMOTE in a scientific publication, we would appreciate citati
 ```
 @article{Wibowo2021,
 author = {Wibowo, Prasetyo and Fatichah, Chastine},
-doi = {10.26594/register.v7i1.2206},
-issn = {25023357},
-journal = {Register: Jurnal Ilmiah Teknologi Sistem Informasi},
-keywords = {Classification,Imbalanced dataset,Oversampling,Performance analysis},
-number = {1},
-pages = {63--71},
-title = {{An in-depth performance analysis of the oversampling techniques for high-class imbalanced dataset}},
+doi = {-},
+issn = {-},
+journal = {The Journal of King Saud University Computer and Information Sciences},
+keywords = {Oversampling, Smoothed Bootstrap Resampling, Imbalanced Data, Machine Learning, COVID-19},
+number = {-},
+pages = {-},
+title = {{Pruning-Based Oversampling Technique with Smoothed Bootstrap Resampling for Imbalanced Clinical Dataset of Covid-19}},
 volume = {7},
 year = {2021}
 }
