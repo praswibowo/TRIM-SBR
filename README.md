@@ -49,14 +49,14 @@ array([415, 415], dtype=int64)
 
 # Citation
 
-If you use k-means SMOTE in a scientific publication, we would appreciate citations to the following [paper](https://github.com/praswibowo):
+If you use TRIM-Smoothed Bootstrap Resampling (TRIM-SBR) in a scientific publication, we would appreciate citations to the following [paper](https://www.sciencedirect.com/science/article/pii/S131915782100272X):
 
 ```
 @article{Wibowo2021,
 author = {Wibowo, Prasetyo and Fatichah, Chastine},
-doi = {-},
-issn = {-},
-journal = {The Journal of King Saud University Computer and Information Sciences},
+doi = {10.1016/j.jksuci.2021.09.021},
+issn = {1319-1578},
+journal = {Journal of King Saud University - Computer and Information Sciences},
 keywords = {Oversampling, Smoothed Bootstrap Resampling, Imbalanced Data, Machine Learning, COVID-19},
 number = {-},
 pages = {-},
